@@ -32,7 +32,7 @@ public class A_Star {
         PriorityQueue<Node> queue = new PriorityQueue<>(); // Priority queue for A* algorithm
         int initialVisited = 1; // Starting with only the first city visited
         List<Integer> initialPath = new ArrayList<>(); // Initial path list
-        queue.add(new Node(0, initialVisited, 0L, computeMSTCost(getVisitedCities(initialVisited, n), graph), initialPath)); // Add initial Node to the queue
+        queue.add(new Node(0, initialVisited, 0L, heuristicFunction(getVisitedCities(initialVisited, n), graph), initialPath)); // Add initial Node to the queue
 
         // A* algorithm loop
         while (!queue.isEmpty()) {
@@ -61,7 +61,7 @@ public class A_Star {
                 if ((currentVisited & (1 << nextCity)) == 0 && graph[currentCity][nextCity] > 0) { // If the next city is not visited and there's a path to it
                     int nextVisited = currentVisited | (1 << nextCity); // Mark the next city as visited
                     long costToNext = currentCost + graph[currentCity][nextCity]; // Calculate the cost to reach the next city
-                    long heuristic = computeMSTCost(getVisitedCities(nextVisited, n), graph); // Calculate heuristic value
+                    long heuristic = heuristicFunction(getVisitedCities(nextVisited, n), graph); // Calculate heuristic value
                     queue.add(new Node(nextCity, nextVisited, costToNext, heuristic, currentPath)); // Add the next Node to the queue
                 }
             }
@@ -71,47 +71,48 @@ public class A_Star {
         return minCost == Long.MAX_VALUE ? -1 : minCost; // If no valid cycle found, return -1
     }
 
-    // Method to compute the minimum spanning tree (MST) cost using Prim's algorithm
-    private static long computeMSTCost(boolean[] visitedCities, int[][] graph) {
+    private static long heuristicFunction(boolean[] visitedCities, int[][] graph) {
         int n = graph.length; // Number of cities
-        long totalWeight = 0; // Total weight of the MST
-        boolean[] inMST = new boolean[n]; // Array to mark if a city is in the MST
-        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[1])); // Priority queue for Prim's algorithm
 
-        int startCity = -1; // Initialize start city index
+        long totalDistance = 0; // Total distance to cover all unvisited cities
+
+        // Find the nearest unvisited city from the current position
+        int currentPosition = -1;
         for (int i = 0; i < n; i++) {
-            if (!visitedCities[i]) { // Find the first unvisited city
-                startCity = i;
+            if (!visitedCities[i]) {
+                currentPosition = i;
                 break;
             }
         }
 
-        if (startCity == -1) { // If all cities are visited, return 0 (no need to build MST)
+        if (currentPosition == -1) { // If all cities are visited, return 0 (no need to travel)
             return 0;
         }
 
-        pq.add(new int[]{startCity, 0}); // Add the start city to the priority queue with weight 0
-        while (!pq.isEmpty()) {
-            int[] edge = pq.poll(); // Extract the edge with the lowest weight
-            int v = edge[0]; // Vertex of the edge
-            int weight = edge[1]; // Weight of the edge
-
-            if (!inMST[v]) { // If the vertex is not in the MST
-                inMST[v] = true; // Mark it as in the MST
-                totalWeight += weight; // Add the edge weight to the total weight of the MST
-
-                // Explore all edges from the current vertex
-                for (int u = 0; u < n; u++) {
-                    if (!inMST[u] && !visitedCities[u] && graph[v][u] > 0) { // If the adjacent vertex is not in the MST and there's a path to it
-                        pq.add(new int[]{u, graph[v][u]}); // Add the edge to the priority queue
-                    }
+        while (true) {
+            // Find the nearest unvisited city from the current position
+            int nearestCity = -1;
+            int minDistance = Integer.MAX_VALUE;
+            for (int i = 0; i < n; i++) {
+                if (!visitedCities[i] && graph[currentPosition][i] > 0 && graph[currentPosition][i] < minDistance) {
+                    nearestCity = i;
+                    minDistance = graph[currentPosition][i];
                 }
             }
+
+            if (nearestCity == -1) { // If there's no unvisited city reachable from the current position
+                break;
+            }
+
+            // Move to the nearest unvisited city
+            visitedCities[nearestCity] = true;
+            totalDistance += minDistance;
+            currentPosition = nearestCity;
         }
 
-        // Return the total weight of the MST
-        return totalWeight;
+        return totalDistance;
     }
+
 
     // Method to convert the visited bitmask to an array of visited cities
     private static boolean[] getVisitedCities(int visited, int n) {
