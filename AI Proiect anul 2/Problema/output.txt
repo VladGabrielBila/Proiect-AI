@@ -1,0 +1,376 @@
+Generated Graph:
+0 2 5 0 0 10 5 7 0 0 0 0 0 6 10 
+2 0 0 0 3 0 8 0 0 0 0 0 0 8 0 
+5 0 0 2 6 0 10 0 4 0 3 0 1 0 1 
+0 0 2 0 0 6 0 5 2 7 3 3 6 2 0 
+0 3 6 0 0 0 0 0 8 5 0 6 0 2 0 
+10 0 0 6 0 0 0 3 10 0 0 0 9 6 3 
+5 8 10 0 0 0 0 0 0 8 0 7 8 5 7 
+7 0 0 5 0 3 0 0 10 6 7 0 7 3 0 
+0 0 4 2 8 10 0 10 0 8 0 0 0 0 6 
+0 0 0 7 5 0 8 6 8 0 7 6 0 2 6 
+0 0 3 3 0 0 0 7 0 7 0 1 7 3 10 
+0 0 0 3 6 0 7 0 0 6 1 0 0 1 0 
+0 0 1 6 0 9 8 7 0 0 7 0 0 4 0 
+6 8 0 2 2 6 5 3 0 2 3 1 4 0 0 
+10 0 1 0 0 3 7 0 6 6 10 0 0 0 0 
+
+Minimum travel cost using BFS: 49
+Path (BFS): [1, 2, 5, 14, 12, 11, 4, 9, 10, 8, 6, 15, 3, 13, 7, 1]
+Time taken (BFS): 0.1756015 seconds
+
+Minimum travel cost using UCS: 49
+Path (UCS): [1, 2, 5, 14, 12, 11, 4, 9, 10, 8, 6, 15, 3, 13, 7, 1]
+Time taken (UCS): 0.2734701 seconds
+
+Minimum travel cost using A* with MST heuristic: 49
+Path (A* with MST heuristic): [1, 2, 5, 14, 12, 11, 4, 9, 10, 8, 6, 15, 3, 13, 7, 1]
+Time taken (A* with MST heuristic): 30.834912 seconds
+
+
+--------------------------------
+Generated Graph:
+0 0 0 1 0 0 10 0 0 1 1 9 0 2 3 
+0 0 0 6 3 9 0 10 2 0 1 0 0 2 0 
+0 0 0 4 0 0 7 10 0 0 0 6 0 10 0 
+1 6 4 0 0 0 0 8 0 0 0 3 9 8 0 
+0 3 0 0 0 0 8 10 0 0 1 0 3 8 0 
+0 9 0 0 0 0 0 0 0 6 0 4 5 0 7 
+10 0 7 0 8 0 0 0 9 10 0 4 6 0 0 
+0 10 10 8 10 0 0 0 7 3 1 0 0 3 10 
+0 2 0 0 0 0 9 7 0 0 0 1 0 7 10 
+1 0 0 0 0 6 10 3 0 0 0 0 7 0 0 
+1 1 0 0 1 0 0 1 0 0 0 0 9 4 5 
+9 0 6 3 0 4 4 0 1 0 0 0 5 0 0 
+0 0 0 9 3 5 6 0 0 7 9 5 0 0 0 
+2 2 10 8 8 0 0 3 7 0 4 0 0 0 10 
+3 0 0 0 0 7 0 10 10 0 5 0 0 10 0 
+
+Minimum travel cost using BFS: 50
+Path (BFS): [1, 4, 3, 7, 12, 9, 2, 14, 8, 10, 6, 13, 5, 11, 15, 1]
+Time taken (BFS): 0.1411123 seconds
+
+Minimum travel cost using UCS: 50
+Path (UCS): [1, 4, 3, 7, 12, 9, 2, 14, 8, 10, 6, 13, 5, 11, 15, 1]
+Time taken (UCS): 0.2404736 seconds
+
+Minimum travel cost using A* with MST heuristic: 50
+Path (A* with MST heuristic): [1, 4, 3, 7, 12, 9, 2, 14, 8, 10, 6, 13, 5, 11, 15, 1]
+Time taken (A* with MST heuristic): 0.522036 seconds
+
+--------------------------------
+Generated Graph:
+0 3 0 6 4 3 5 0 0 7 0 0 0 0 0 0 8 4 0 0 
+3 0 0 0 8 0 8 0 0 1 10 0 0 1 0 5 0 4 0 7 
+0 0 0 6 0 9 4 0 0 0 0 0 5 1 9 4 0 4 0 0 
+6 0 6 0 1 0 10 5 0 6 6 0 1 5 8 2 10 0 9 0 
+4 8 0 1 0 0 0 2 10 0 9 0 0 4 0 4 0 4 10 8 
+3 0 9 0 0 0 0 0 0 0 9 3 7 7 0 0 0 3 0 0 
+5 8 4 10 0 0 0 6 4 0 0 0 0 3 1 0 0 0 6 1 
+0 0 0 5 2 0 6 0 2 0 0 3 4 6 0 7 8 0 0 0 
+0 0 0 0 10 0 4 2 0 0 0 0 5 0 0 0 0 0 0 8 
+7 1 0 6 0 0 0 0 0 0 0 1 10 0 0 7 8 0 10 6 
+0 10 0 6 9 9 0 0 0 0 0 0 0 8 0 1 0 0 0 0 
+0 0 0 0 0 3 0 3 0 1 0 0 0 0 0 0 0 0 0 0 
+0 0 5 1 0 7 0 4 5 10 0 0 0 0 0 0 4 6 0 10 
+0 1 1 5 4 7 3 6 0 0 8 0 0 0 7 0 3 0 10 4 
+0 0 9 8 0 0 1 0 0 0 0 0 0 7 0 2 10 7 6 5 
+0 5 4 2 4 0 0 7 0 7 1 0 0 0 2 0 0 8 3 0 
+8 0 0 10 0 0 0 8 0 8 0 0 4 3 10 0 0 0 7 2 
+4 4 4 0 4 3 0 0 0 0 0 0 6 0 7 8 0 0 0 0 
+0 0 0 9 10 0 6 0 0 10 0 0 0 10 6 3 7 0 0 7 
+0 7 0 0 8 0 1 0 8 6 0 0 10 4 5 0 2 0 7 0 
+
+Minimum travel cost using BFS: 53
+Path (BFS): [1, 2, 10, 12, 6, 18, 3, 14, 17, 20, 7, 15, 19, 16, 11, 4, 13, 9, 8, 5, 1]
+Time taken (BFS): 5.6067862 seconds
+
+Minimum travel cost using UCS: 53
+Path (UCS): [1, 2, 10, 12, 6, 18, 3, 14, 17, 20, 7, 15, 19, 16, 11, 4, 13, 9, 8, 5, 1]
+Time taken (UCS): 7.656563 seconds
+
+Minimum travel cost using A* with MST heuristic: 53
+Path (A* with MST heuristic): [1, 2, 10, 12, 6, 18, 3, 14, 17, 20, 7, 15, 19, 16, 11, 4, 13, 9, 8, 5, 1]
+Time taken (A* with MST heuristic): 34.9303278 seconds
+
+--------------------------------
+Generated Graph:
+0 6 4 7 4 3 9 0 0 0 
+6 0 0 6 0 0 0 0 0 1 
+4 0 0 6 3 0 0 0 8 4 
+7 6 6 0 10 0 0 0 0 10 
+4 0 3 10 0 0 0 0 0 0 
+3 0 0 0 0 0 8 1 6 9 
+9 0 0 0 0 8 0 2 8 0 
+0 0 0 0 0 1 2 0 4 0 
+0 0 8 0 0 6 8 4 0 3 
+0 1 4 10 0 9 0 0 3 0 
+
+Minimum travel cost using BFS: 37
+Path (BFS): [1, 6, 8, 7, 9, 10, 2, 4, 3, 5, 1]
+Time taken (BFS): 0.0058534 seconds
+
+Minimum travel cost using UCS: 37
+Path (UCS): [1, 6, 8, 7, 9, 10, 2, 4, 3, 5, 1]
+Time taken (UCS): 0.0174775 seconds
+
+Minimum travel cost using A* with MST heuristic: 37
+Path (A* with MST heuristic): [1, 6, 8, 7, 9, 10, 2, 4, 3, 5, 1]
+Time taken (A* with MST heuristic): 0.008906 seconds
+
+--------------------------------
+Generated Graph:
+0 0 6 5 0 0 0 1 0 0 
+0 0 0 0 8 9 0 0 3 10 
+6 0 0 8 2 0 3 3 5 0 
+5 0 8 0 7 0 1 0 6 9 
+0 8 2 7 0 5 0 1 0 0 
+0 9 0 0 5 0 3 0 0 8 
+0 0 3 1 0 3 0 4 6 0 
+1 0 3 0 1 0 4 0 7 0 
+0 3 5 6 0 0 6 7 0 2 
+0 10 0 9 0 8 0 0 2 0 
+
+Minimum travel cost using BFS: 36
+Path (BFS): [1, 8, 3, 5, 2, 9, 10, 6, 7, 4, 1]
+Time taken (BFS): 0.0110203 seconds
+
+Minimum travel cost using UCS: 36
+Path (UCS): [1, 8, 3, 5, 2, 9, 10, 6, 7, 4, 1]
+Time taken (UCS): 0.024248 seconds
+
+Minimum travel cost using A* with MST heuristic: 36
+Path (A* with MST heuristic): [1, 8, 3, 5, 2, 9, 10, 6, 7, 4, 1]
+Time taken (A* with MST heuristic): 0.0291177 seconds
+
+--------------------------------
+Generated Graph:
+0 3 2 5 0 0 0 10 9 0 
+3 0 0 5 4 10 10 0 1 3 
+2 0 0 3 0 9 0 0 5 1 
+5 5 3 0 0 0 3 0 2 1 
+0 4 0 0 0 2 0 5 0 0 
+0 10 9 0 2 0 0 9 5 0 
+0 10 0 3 0 0 0 0 0 0 
+10 0 0 0 5 9 0 0 0 9 
+9 1 5 2 0 5 0 0 0 9 
+0 3 1 1 0 0 0 9 9 0 
+
+Minimum travel cost using BFS: 40
+Path (BFS): [1, 3, 10, 4, 7, 2, 9, 6, 5, 8, 1]
+Time taken (BFS): 0.0105962 seconds
+
+Minimum travel cost using UCS: 40
+Path (UCS): [1, 3, 10, 4, 7, 2, 9, 6, 5, 8, 1]
+Time taken (UCS): 0.0247951 seconds
+
+Minimum travel cost using A* with MST heuristic: 40
+Path (A* with MST heuristic): [1, 3, 10, 4, 7, 2, 9, 6, 5, 8, 1]
+Time taken (A* with MST heuristic): 0.027807 seconds
+
+--------------------------------
+Generated Graph:
+0 0 10 0 9 0 0 8 
+0 0 3 1 4 0 0 0 
+10 3 0 0 7 3 10 0 
+0 1 0 0 10 1 0 3 
+9 4 7 10 0 10 0 0 
+0 0 3 1 10 0 1 0 
+0 0 10 0 0 1 0 0 
+8 0 0 3 0 0 0 0 
+
+Minimum travel cost using BFS: 39
+Path (BFS): [1, 8, 4, 6, 7, 3, 2, 5, 1]
+Time taken (BFS): 0.0043397 seconds
+
+Minimum travel cost using UCS: 39
+Path (UCS): [1, 8, 4, 6, 7, 3, 2, 5, 1]
+Time taken (UCS): 0.126076 seconds
+
+Minimum travel cost using A* with MST heuristic: 39
+Path (A* with MST heuristic): [1, 8, 4, 6, 7, 3, 2, 5, 1]
+Time taken (A* with MST heuristic): 0.0359545 seconds
+
+--------------------------------
+Generated Graph:
+0 0 10 0 0 9 10 5 7 0 0 0 0 1 5 
+0 0 5 1 0 5 7 0 7 0 0 5 0 0 0 
+10 5 0 6 9 0 0 2 0 5 0 10 0 2 9 
+0 1 6 0 2 8 0 7 0 0 1 0 9 0 10 
+0 0 9 2 0 0 7 9 0 0 0 0 6 5 0 
+9 5 0 8 0 0 1 9 0 8 0 3 0 0 0 
+10 7 0 0 7 1 0 7 0 0 0 2 8 0 6 
+5 0 2 7 9 9 7 0 0 0 0 3 0 0 10 
+7 7 0 0 0 0 0 0 0 8 2 9 5 0 0 
+0 0 5 0 0 8 0 0 8 0 6 0 1 3 0 
+0 0 0 1 0 0 0 0 2 6 0 2 1 6 4 
+0 5 10 0 0 3 2 3 9 0 2 0 9 3 5 
+0 0 0 9 6 0 8 0 5 1 1 9 0 7 2 
+1 0 2 0 5 0 0 0 0 3 6 3 7 0 8 
+5 0 9 10 0 0 6 10 0 0 4 5 2 8 0 
+
+Minimum travel cost using BFS: 43
+Path (BFS): [1, 14, 5, 4, 2, 6, 7, 12, 8, 3, 10, 13, 15, 11, 9, 1]
+Time taken (BFS): 0.3018993 seconds
+
+Minimum travel cost using UCS: 43
+Path (UCS): [1, 14, 5, 4, 2, 6, 7, 12, 8, 3, 10, 13, 15, 11, 9, 1]
+Time taken (UCS): 0.2684632 seconds
+
+Minimum travel cost using A* with MST heuristic: 43
+Path (A* with MST heuristic): [1, 14, 5, 4, 2, 6, 7, 12, 8, 3, 10, 13, 15, 11, 9, 1]
+Time taken (A* with MST heuristic): 65.875387 seconds
+
+
+--------------------------------
+Generated Graph:
+0 0 0 6 1 0 0 0 0 6 0 0 9 2 6 
+0 0 0 0 3 0 9 0 3 0 0 4 0 5 0 
+0 0 0 0 0 10 0 7 0 0 10 0 0 3 0 
+6 0 0 0 8 4 3 0 0 0 0 0 6 7 0 
+1 3 0 8 0 0 7 0 0 0 3 0 0 4 0 
+0 0 10 4 0 0 4 0 8 0 6 4 0 0 0 
+0 9 0 3 7 4 0 0 5 6 6 5 7 2 0 
+0 0 7 0 0 0 0 0 10 0 0 0 0 6 9 
+0 3 0 0 0 8 5 10 0 8 7 5 8 2 6 
+6 0 0 0 0 0 6 0 8 0 4 7 5 0 0 
+0 0 10 0 3 6 6 0 7 4 0 0 0 0 0 
+0 4 0 0 0 4 5 0 5 7 0 0 4 10 0 
+9 0 0 6 0 0 7 0 8 5 0 4 0 3 0 
+2 5 3 7 4 0 2 6 2 0 0 10 3 0 0 
+6 0 0 0 0 0 0 9 6 0 0 0 0 0 0 
+
+Minimum travel cost using BFS: 64
+Path (BFS): [1, 5, 11, 10, 13, 4, 7, 6, 12, 2, 9, 14, 3, 8, 15, 1]
+Time taken (BFS): 1.6599539 seconds
+
+Minimum travel cost using UCS: 64
+Path (UCS): [1, 5, 11, 10, 13, 4, 7, 6, 12, 2, 9, 14, 3, 8, 15, 1]
+Time taken (UCS): 0.1312598 seconds
+
+Minimum travel cost using A* with MST heuristic: 64
+Path (A* with MST heuristic): [1, 5, 11, 10, 13, 4, 7, 6, 12, 2, 9, 14, 3, 8, 15, 1]
+Time taken (A* with MST heuristic): 3.392275 seconds
+
+--------------------------------
+Generated Graph:
+0 9 7 0 0 9 0 1 4 4 0 0 8 0 6 
+9 0 0 2 0 3 5 0 0 8 10 9 9 7 3 
+7 0 0 6 4 0 0 0 0 8 0 9 0 0 0 
+0 2 6 0 0 9 0 0 0 3 7 0 0 0 0 
+0 0 4 0 0 2 8 10 0 0 9 3 0 6 0 
+9 3 0 9 2 0 0 8 6 1 0 4 4 0 7 
+0 5 0 0 8 0 0 9 0 10 2 1 1 0 0 
+1 0 0 0 10 8 9 0 0 0 7 1 7 0 8 
+4 0 0 0 0 6 0 0 0 0 5 0 0 5 0 
+4 8 8 3 0 1 10 0 0 0 0 5 0 0 0 
+0 10 0 7 9 0 2 7 5 0 0 0 0 10 4 
+0 9 9 0 3 4 1 1 0 5 0 0 2 10 0 
+8 9 0 0 0 4 1 7 0 0 0 2 0 6 0 
+0 7 0 0 6 0 0 0 5 0 10 10 6 0 10 
+6 3 0 0 0 7 0 8 0 0 4 0 0 10 0 
+
+Minimum travel cost using BFS: 46
+Path (BFS): [1, 3, 5, 6, 10, 4, 2, 15, 11, 9, 14, 13, 7, 12, 8, 1]
+Time taken (BFS): 11.5172253 seconds
+
+Minimum travel cost using UCS: 46
+Path (UCS): [1, 8, 12, 7, 13, 14, 9, 11, 15, 2, 4, 10, 6, 5, 3, 1]
+Time taken (UCS): 0.2605148 seconds
+
+Minimum travel cost using A* with MST heuristic: 46
+Path (A* with MST heuristic): [1, 8, 12, 7, 13, 14, 9, 11, 15, 2, 4, 10, 6, 5, 3, 1]
+Time taken (A* with MST heuristic): 21.9882189 seconds
+
+--------------------------------
+Generated Graph:
+0 0 0 5 1 8 0 0 6 9 0 0 0 0 7 
+0 0 0 0 0 0 8 0 0 0 1 0 0 10 1 
+0 0 0 10 8 0 0 3 0 7 0 8 9 9 0 
+5 0 10 0 0 0 5 0 0 0 0 0 0 1 10 
+1 0 8 0 0 10 4 0 0 0 0 0 5 8 0 
+8 0 0 0 10 0 1 0 6 0 7 0 1 9 2 
+0 8 0 5 4 1 0 8 0 3 5 2 0 10 0 
+0 0 3 0 0 0 8 0 0 4 6 0 7 9 6 
+6 0 0 0 0 6 0 0 0 9 0 0 5 0 0 
+9 0 7 0 0 0 3 4 9 0 2 3 0 0 0 
+0 1 0 0 0 7 5 6 0 2 0 5 2 7 0 
+0 0 8 0 0 0 2 0 0 3 5 0 10 0 0 
+0 0 9 0 5 1 0 7 5 0 2 10 0 0 8 
+0 10 9 1 8 9 10 9 0 0 7 0 0 0 2 
+7 1 0 10 0 2 0 6 0 0 0 0 8 2 0 
+
+Minimum travel cost using BFS: 45
+Path (BFS): [1, 5, 3, 8, 10, 12, 7, 6, 9, 13, 11, 2, 15, 14, 4, 1]
+Time taken (BFS): 3.7119289 seconds
+
+Minimum travel cost using UCS: 45
+Path (UCS): [1, 5, 3, 8, 10, 12, 7, 6, 9, 13, 11, 2, 15, 14, 4, 1]
+Time taken (UCS): 0.1200467 seconds
+
+Minimum travel cost using A* with MST heuristic: 45
+Path (A* with MST heuristic): [1, 5, 3, 8, 10, 12, 7, 6, 9, 13, 11, 2, 15, 14, 4, 1]
+Time taken (A* with MST heuristic): 7.2634193 seconds
+
+
+--------------------------------
+Generated Graph:
+0 0 0 8 3 0 4 1 3 0 1 0 1 0 7 
+0 0 5 10 7 4 0 0 4 3 3 1 1 0 0 
+0 5 0 6 0 7 0 0 0 0 7 7 7 0 0 
+8 10 6 0 0 0 0 9 3 0 0 0 2 0 1 
+3 7 0 0 0 8 0 2 0 8 0 4 0 0 0 
+0 4 7 0 8 0 8 0 0 3 0 6 0 4 0 
+4 0 0 0 0 8 0 2 0 0 0 10 3 7 8 
+1 0 0 9 2 0 2 0 0 0 0 10 0 10 0 
+3 4 0 3 0 0 0 0 0 10 6 0 0 3 2 
+0 3 0 0 8 3 0 0 10 0 5 0 0 0 0 
+1 3 7 0 0 0 0 0 6 5 0 0 0 4 0 
+0 1 7 0 4 6 10 10 0 0 0 0 4 0 0 
+1 1 7 2 0 0 3 0 0 0 0 4 0 4 0 
+0 0 0 0 0 4 7 10 3 0 4 0 4 0 0 
+7 0 0 1 0 0 8 0 2 0 0 0 0 0 0 
+
+Minimum travel cost using BFS: 43
+Path (BFS): [1, 11, 3, 4, 15, 9, 14, 6, 10, 2, 12, 5, 8, 7, 13, 1]
+Time taken (BFS): 3.2573483 seconds
+
+Minimum travel cost using UCS: 43
+Path (UCS): [1, 13, 7, 8, 5, 12, 2, 10, 6, 14, 9, 15, 4, 3, 11, 1]
+Time taken (UCS): 0.1342481 seconds
+
+Minimum travel cost using A* with MST heuristic: 43
+Path (A* with MST heuristic): [1, 13, 7, 8, 5, 12, 2, 3, 4, 15, 9, 14, 6, 10, 11, 1]
+Time taken (A* with MST heuristic): 6.3656742 seconds
+
+--------------------------------
+Generated Graph:
+0 0 2 2 5 5 8 0 0 4 0 5 6 6 1 
+0 0 2 0 0 0 0 0 8 10 2 6 3 8 0 
+2 2 0 0 9 0 5 0 0 9 8 3 0 0 0 
+2 0 0 0 9 8 0 0 9 10 0 10 0 6 0 
+5 0 9 9 0 0 9 6 0 7 8 2 5 0 0 
+5 0 0 8 0 0 0 2 4 3 0 0 2 0 4 
+8 0 5 0 9 0 0 0 9 1 3 0 0 0 0 
+0 0 0 0 6 2 0 0 3 0 1 8 0 0 5 
+0 8 0 9 0 4 9 3 0 0 1 0 10 0 7 
+4 10 9 10 7 3 1 0 0 0 8 7 0 7 1 
+0 2 8 0 8 0 3 1 1 8 0 0 9 4 7 
+5 6 3 10 2 0 0 8 0 7 0 0 0 0 3 
+6 3 0 0 5 2 0 0 10 0 9 0 0 0 9 
+6 8 0 6 0 0 0 0 0 7 4 0 0 0 0 
+1 0 0 0 0 4 0 5 7 1 7 3 9 0 0 
+
+Minimum travel cost using BFS: 42
+Path (BFS): [1, 15, 10, 7, 11, 9, 8, 6, 13, 5, 12, 3, 2, 14, 4, 1]
+Time taken (BFS): 30.102224 seconds
+
+Minimum travel cost using UCS: 42
+Path (UCS): [1, 4, 14, 11, 9, 8, 6, 13, 2, 3, 7, 10, 15, 12, 5, 1]
+Time taken (UCS): 0.2002672 seconds
+
+Minimum travel cost using A* with MST heuristic: 42
+Path (A* with MST heuristic): [1, 4, 14, 11, 9, 8, 6, 13, 2, 3, 7, 10, 15, 12, 5, 1]
+Time taken (A* with MST heuristic): 43.7928333 seconds
+
+--------------------------------
