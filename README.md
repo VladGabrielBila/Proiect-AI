@@ -16,7 +16,6 @@ The program generates a random weighted graph and applies each algorithm to find
 - [Output](#output)
 - [Classes and Methods](#classes-and-methods)
 - [Requirements](#requirements)
-- [License](#license)
 
 ## Overview
 
@@ -47,6 +46,8 @@ This project provides an implementation of three different algorithms to solve t
 ## Output
 The program generates an output file named țoutput.txtț with the following details for each run:
 
-The generated graph
-The minimum travel cost and path found by each algorithm
-The time taken by each algorithm
+- The generated graph
+- The minimum travel cost and path found by each algorithm
+- The time taken by each algorithm
+## Requirements
+- Java Development Kit (JDK) 8 or higher
