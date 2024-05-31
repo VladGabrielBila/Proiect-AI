@@ -1,0 +1,1 @@
+Download the zip file with the project from GitHub. After downloading the zip file with the source code, open IntelliJ IDEA or Eclipse (I personally used IntelliJ IDEA for this project). In IntelliJ IDEA/Eclipse, go to File in the top left corner, select Open, and then choose the unzipped folder with the source code. Navigate to Main and run the application.
